@@ -20,7 +20,7 @@ header {
       background-color: #3aa8fb;
       color: white;
       text-align: center; /* biar teks di tengah */
-      padding: 20px 0 80px; /* bawahnya lebih besar agar muat search bar */
+      padding: 20px 0 40px; /* bawahnya lebih besar agar muat search bar */
       position: relative;
       
     }
@@ -46,7 +46,7 @@ header h2 {
   color: #fafafa;
   transition: 0.3s;
    position: absolute;     
-  top: 80px;
+  top: 90px;
   margin-left: 30px;
 }
 
@@ -229,20 +229,18 @@ hr {
   color: #ff4b4b;
 }
 /* ====== AREA SEARCH BOX ====== */
+/* ====== AREA SEARCH BOX (VERSI STABIL) ====== */
 .search-box {
-  position: absolute;        /* biar bisa digeser keluar dari header */ 
-  top: 80px;               /* geser ke bawah dari batas bawah header */
-  left: 50%;                 /* posisi titik tengah di tengah layar */
-  transform: translateX(-50%); /* geser balik setengah lebar elemen agar benar-benar center */
-  
-  display: flex;             /* biar input dan tombol sejajar */
+  margin: 20px auto 0;          /* beri jarak dari judul */
+  display: flex;
   align-items: center;
-  background-color: #ffffff; /* warna dasar putih */
+  justify-content: space-between;
+  background-color: #ffffff;
   padding: 8px 12px;
-  border-radius: 25px;       /* sudut melengkung */
-  width: 60%;                /* lebar relatif agar responsif */
-  max-width: 600px;          /* batas lebar maksimum */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* bayangan lembut */
+  border-radius: 25px;
+  width: 70%;                   /* sedikit lebih lebar di mobile */
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 /* ====== INPUT ====== */
